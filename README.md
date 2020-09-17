@@ -20,11 +20,13 @@ The flow of the code depends on many options. But the general initial run should
 
 To get all connections needs to be done one by one from IDOS engine. It means it generates hundreds requests and it can overload this service and possibly it can ban local IP. Because the program scrapes this web page the right results strongly depend on its version and HTML style it may need to change the source code in the future.
 
+Because the program uses the network a lot it can make it very slow. But the main class instances can be saved for future reuse. The proper options needs to be set for it. Run `--help` for help.
+
 ## Results
 
 The result of this project are created maps or data files bellow. Those maps include 280 biggest cities in Czechia. And they show time accessibility of them from Prague by green to red color fade. Green means less time needed or better accessibility, red means the opposite.
 
-Those maps can be separated by visualized data. The first group shows mean of pure time duration of found connections. It is easy to see that the travel time needed is increasing by distance from Prague. The second group shows mean of time durations divided by geographical distance. In other words it penalizes the travel time by the distance so the cities far away can be green if you can get there fast. But the cities closer to Prague can be red if there is no direct or fast connection.
+Those maps can be separated by visualized data. The first group shows the mean of the pure time duration of the found connections. It is easy to see that the travel time is increasing by the distance from Prague. The second group shows the mean of the travel times divided by geographical distance. In other words it penalizes the travel time by the distance so the cities far away can be green if you can get there fast. But the cities closer to Prague can be red if there is no direct or fast connection.
 
 The other separation depends on vehicles types: train only or train and bus. In comparison of these types it is easy to see that some regions are not accessible by trains but they are operated by buses well.
 
