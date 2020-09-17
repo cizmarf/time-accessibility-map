@@ -26,6 +26,8 @@ Because the program uses the network a lot it can make it very slow. But the mai
 
 The result of this project are created maps or data files bellow. Those maps include 280 biggest cities in Czechia. And they show time accessibility of them from Prague by green to red color fade. Green means less time needed or better accessibility, red means the opposite.
 
+The all connections are searched for Sep. 15 2020, 7 AM Prague time and the most of them consist of 3 different connections as they are returned from IDOS engine. 
+
 Those maps can be separated by visualized data. The first group shows the mean of the pure time duration of the found connections. It is easy to see that the travel time is increasing by the distance from Prague. The second group shows the mean of the travel times divided by geographical distance. In other words it penalizes the travel time by the distance so the cities far away can be green if you can get there fast. But the cities closer to Prague can be red if there is no direct or fast connection.
 
 The other separation depends on vehicles types: train only or train and bus. In comparison of these types it is easy to see that some regions are not accessible by trains but they are operated by buses well.
